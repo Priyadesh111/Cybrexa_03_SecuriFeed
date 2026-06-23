@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SecuriFeed | PhishDetect</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2>SecuriFeed</h2>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#url-analyzer">URL Analyzer</a></li>
+            <li><a href="#email-analyzer">Email Analyzer</a></li>
+            <li><a href="#ssl-checker">HTTPS Check</a></li>
+            <li><a href="#news">News Feed</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+
+        <h1>SecuriFeed</h1>
+
+        <h3>Phishing Detection & Threat Intelligence</h3>
+
+        <p>
+            Analyze suspicious URLs, inspect email headers,
+            verify HTTPS security, and stay informed about
+            emerging cyber threats.
+        </p>
+
+        <a href="#url-analyzer" class="btn">
+            Start Analysis
+        </a>
+
+    </section>
+
+    <!-- URL ANALYZER -->
+    <section id="url-analyzer" class="feature-card">
+
+        <h2>URL Phishing Analyzer</h2>
+
+        <p>
+            Enter a website URL to detect suspicious phishing indicators.
+        </p>
+
+        <input
+            type="text"
+            id="urlInput"
+            placeholder="https://example.com">
+
+        <button onclick="analyzeURL()">
+            Analyze URL
+        </button>
+
+        <div id="urlResult" class="result-box">
+            Results will appear here...
+        </div>
+
+    </section>
+
+    <!-- EMAIL HEADER ANALYZER -->
+    <section id="email-analyzer" class="feature-card">
+
+        <h2>Email Header Analyzer</h2>
+
+        <p>
+            Paste an email header to identify spoofing attempts
+            and phishing indicators.
+        </p>
+
+        <textarea
+            id="emailHeader"
+            rows="10"
+            placeholder="Paste email header here..."></textarea>
+
+        <button onclick="analyzeEmail()">
+            Analyze Email
+        </button>
+
+        <div id="emailResult" class="result-box">
+            Results will appear here...
+        </div>
+
+    </section>
+
+    <!-- HTTPS CHECKER -->
+    <section id="ssl-checker" class="feature-card">
+
+        <h2>HTTPS Security Checker</h2>
+
+        <p>
+            Check whether a website is using a secure HTTPS connection.
+        </p>
+
+        <input
+            type="text"
+            id="sslInput"
+            placeholder="https://website.com">
+
+        <button onclick="checkSSL()">
+            Check HTTPS
+        </button>
+
+        <div id="sslResult" class="result-box">
+            HTTPS security status will appear here...
+        </div>
+
+    </section>
+
+    <!-- NEWS FEED -->
+    <section id="news">
+
+        <h2>Latest Cyber Threat News</h2>
+
+        <div id="newsContainer" class="news-grid">
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+
+        <h2>About SecuriFeed</h2>
+
+        <p>
+            SecuriFeed is a cybersecurity awareness platform designed
+            to help users identify phishing attempts through URL analysis,
+            email header inspection, HTTPS verification, and cyber threat
+            intelligence updates.
+        </p>
+
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+
+        <h2>Why Use SecuriFeed?</h2>
+
+        <div class="features-grid">
+
+            <div class="feature-box">
+                <h3>URL Analysis</h3>
+                <p>Detect suspicious domains and phishing patterns.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Email Inspection</h3>
+                <p>Identify spoofed senders and malicious emails.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>HTTPS Check</h3>
+                <p>Verify secure website connections.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Threat Intelligence</h3>
+                <p>Stay informed about current cyber threats.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 SecuriFeed | Designed & Developed by Priya Deshmukh
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
