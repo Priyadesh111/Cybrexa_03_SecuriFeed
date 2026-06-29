@@ -1,10 +1,4 @@
-/* ==========================================
-   SECURIFEED - MAIN SCRIPT
-========================================== */
-
-/* ==========================================
-   HAMBURGER MENU
-========================================== */
+/*  HAMBURGER MENU */
 
 function toggleMenu() {
     document
@@ -14,9 +8,7 @@ function toggleMenu() {
 }
 
 
-/* ==========================================
-   URL PHISHING ANALYZER
-========================================== */
+/*  URL PHISHING ANALYZER */
 
 function analyzeURL() {
 
@@ -229,9 +221,7 @@ function checkSSL() {
 }
 
 
-/* ==========================================
-   CYBER THREAT NEWS FEED
-========================================== */
+/*CYBER THREAT NEWS FEED*/
 
 const cyberNews = [
 
@@ -262,9 +252,7 @@ const cyberNews = [
 ];
 
 
-/* ==========================================
-   LOAD NEWS
-========================================== */
+/*  LOAD NEWS */
 
 document.addEventListener("DOMContentLoaded", function () {
 
